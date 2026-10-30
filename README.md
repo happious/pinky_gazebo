@@ -1,8 +1,9 @@
+# Pinky Pro Gazebo · Multi Room
+
 ![Gazebo Harmonic](https://img.shields.io/badge/Gazebo-Harmonic%20%28Sim%208%29-orange)
 ![ROS 2 Jazzy](https://img.shields.io/badge/ROS%202-Jazzy-blue)
 ![Ubuntu 24.04](https://img.shields.io/badge/Ubuntu-24.04%20LTS-E95420?logo=ubuntu&logoColor=white)
 
-# Pinky Pro Gazebo · Multi Room
 
 Ubuntu 24.04 / ROS 2 Jazzy / Gazebo Harmonic에서 Pinky Pro를 실행하고, SLAM으로 지도를 만든 뒤 Nav2로 자율주행하는 예제입니다. 이 저장소는 로컬에서 사용한 소스와 예제 맵을 함께 제공합니다.
 
