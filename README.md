@@ -19,6 +19,15 @@ Ubuntu 24.04 / ROS 2 Jazzy / Gazebo Harmonic에서 Pinky Pro를 실행하고, SL
 
 ROS 2 Jazzy가 설치되어 있다고 가정합니다. 이 저장소를 내려받은 폴더 자체를 워크스페이스로 사용합니다. 아래 명령은 경로를 ~/pinky_ws로 가정하므로 기존 작업 폴더가 있다면 다른 경로를 쓰고 이후 명령도 함께 바꾸세요.
 
+새 컴퓨터에서 내려받기:
+
+~~~bash
+git clone https://github.com/happious/pinky_gazebo.git ~/pinky_ws
+cd ~/pinky_ws
+~~~
+
+이미 ~/pinky_ws가 있다면 다른 빈 경로를 선택하고 이 문서의 경로도 함께 바꾸세요.
+
 GitHub 저장소에서 내려받은 소스에는 필요한 폴더가 포함되어 있으므로 Pinky Pro와 Multi Room을 다시 clone하거나 상세가이드의 Launch 전체 교체를 반복할 필요가 없습니다.
 
 ~~~bash
