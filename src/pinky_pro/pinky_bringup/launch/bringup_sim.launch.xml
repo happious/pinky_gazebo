@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+
+<launch>
+    <!-- 시뮬레이터 선택 -->
+    <arg name="sim" default="mujoco"/>
+
+    <!-- 공통 설정 -->
+    <arg name="world_name" default="pinky_factory.world"/>
+    <arg name="cam_tilt_deg" default="8"/>
+
+    <!-- 외부 월드 경로 -->
+    <arg name="world" default=""/>
+
+    <!-- Gazebo 초기 위치 -->
+    <arg name="x" default="-0.971979"/>
+    <arg name="y" default="0.028805"/>
+    <arg name="z" default="0.1"/>
+    <arg name="yaw" default="-3.130950"/>
+
+    <!-- MuJoCo 설정 -->
+    <arg name="use_gpu" default="false"/>
+    <arg name="viewer" default="true"/>
+    <arg name="camera" default="true"/>
+
+    <!-- Gazebo 설정 -->
+    <arg name="namespace" default=""/>
+
+    <!-- 시뮬레이터 선택 조건 -->
+    <let
+        name="use_mujoco"
+        value="$(eval '&quot;$(var sim)&quot; == &quot;mujoco&quot;')"/>
+
+    <let
+        name="use_gazebo"
+        value="$(eval '&quot;$(var sim)&quot; in (&quot;gz&quot;, &quot;gazebo&quot;)')"/>
+
+    <log message="[pinky_bringup] simulator: $(var sim)"/>
+
+    <!-- MuJoCo 실행 -->
+    <include
+        file="$(find-pkg-share pinky_mujoco)/launch/launch_sim.launch.py"
+        if="$(var use_mujoco)">
+
+        <arg name="use_gpu" value="$(var use_gpu)"/>
+        <arg name="viewer" value="$(var viewer)"/>
+        <arg name="camera" value="$(var camera)"/>
+        <arg name="world_name" value="$(var world_name)"/>
+        <arg name="world" value="$(var world)"/>
+        <arg name="cam_tilt_deg" value="$(var cam_tilt_deg)"/>
+    </include>
+
+    <!-- Gazebo 실행 -->
+    <include
+        file="$(find-pkg-share pinky_gz_sim)/launch/launch_sim.launch.xml"
+        if="$(var use_gazebo)">
+
+        <arg name="world_name" value="$(var world_name)"/>
+        <arg name="world"
+             value="$(eval '&quot;$(var world)&quot; if &quot;$(var world)&quot; else &quot;$(find-pkg-share pinky_gz_sim)/worlds/$(var world_name)&quot;')"/>
+
+        <arg name="cam_tilt_deg" value="$(var cam_tilt_deg)"/>
+        <arg name="namespace" value="$(var namespace)"/>
+
+        <!-- 초기 위치 전달 -->
+        <arg name="x" value="$(var x)"/>
+        <arg name="y" value="$(var y)"/>
+        <arg name="z" value="$(var z)"/>
+        <arg name="yaw" value="$(var yaw)"/>
+
+    </include>
+
+</launch>
+

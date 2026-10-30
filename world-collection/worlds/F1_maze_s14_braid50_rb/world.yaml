@@ -1,0 +1,57 @@
+id: F1-07
+slug: maze_s14_braid50_rb
+title: Maze 14×14, braid 0.5, recursive backtracker
+tier: F
+role: evaluation
+family: F1
+worldgen_version: 1.0.1
+generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
+parameters: {algorithm: recursive backtracker, cell_pitch_m: 2.5, cells: 14, landmarks: 33, loops: braid 0.5}
+seed: 107000
+selection:
+  candidate: 0
+  rejected: []
+expected: {free_area_m2: 1127.07, free_area_tolerance: 0.02, narrowest_passage_m: 2.1, minimum_passage_m: 2.0, narrowest_tolerance_m: 0.1,
+  loops: 7, loops_unsized: 7}
+measured: {free_area_m2: 1127.065, narrowest_passage_m: 2.0, loops: 7, loops_unsized: 7}
+descriptors:
+  version: world-descriptors-v1
+  grid: {source: t0_raster, resolution_m: 0.05, seed: 2026}
+  area_m2: 1127.07
+  clearance_m: {median: 0.6, p10: 0.15, p90: 1.1}
+  clearance_max_m: 2.4
+  char_dim_m: {median: 2.325, n: 400, mc_halfwidth: 0.0}
+  dispersion: {mean: 3.775, n: 400, mc_se: 0.062}
+  nav_complexity: {median: 2.0722, p90: 5.6699, n: 400, grid_m: 0.05}
+  narrowest_passage_m: 2.0
+  min_gap_m: 2.15
+  loops: 7
+  loops_unsized: 7
+  dead_ends: 12
+  junctions: 24
+  regions: 1
+  robots:
+    mogi:
+      radius_m: 0.29
+      r_eff_m: 10.0
+      visible_area_m2: {mean: 35.03, n: 400, mc_se: 0.47}
+      visible_fraction: 0.0311
+      area_over_pi_r2: 3.5876
+      spawn_visible_fraction: {S1: 0.0353}
+spawns:
+- {id: S1, x: -16.25, y: 8.75, yaw: 1.570796}
+inclusion:
+- - [-17.4, -17.4]
+  - [17.4, -17.4]
+  - [17.4, 17.4]
+  - [-17.4, 17.4]
+notches: []
+doors: []
+moving_objects: null
+plan_data: {braided_walls: 8, construction_free_area_m2: 1127.065, dead_end_cells: 12, dead_end_fraction: 0.0612, open_squares: 1,
+  spawn_cell: 140}
+sources:
+- {what: maze generation algorithms, cite: bellot2021mazes}
+licence: Apache-2.0
+hashes: {sdf: 92f28e144b4ea4168a93ce4e0f2f01730d217aa96ec840ed59155d41eeae14ee, world_json: 0eec33fe753b3ef82257e3bacfb8328061e3ca845240eba1a2a90a74a36b7aad}
+status: confirmed

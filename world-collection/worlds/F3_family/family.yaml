@@ -1,0 +1,71 @@
+family: F3
+worldgen_version: 1.0.1
+generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
+seed_sequences: {evaluation: '400000 + 1000·j + i (j: setting, i: candidate 0…999)', pilot: 450000 + 1000·j + i}
+rejected_total: 0
+instances:
+- id: F3-01
+  folder: F3_aisles_h30x20_a150_x1
+  parameters:
+    aisle_width_m: 1.5
+    cross_aisles: 1
+    hall_m: [30, 20]
+    rack_depth_m: 2.0
+    rows: 5
+  seed: 401000
+  candidate: 0
+  rejected: 0
+  status: confirmed
+  sdf_sha256: 7a8bec3c52b0bb228548503d6668ed74297fb591d67ad445e80a0e3b95f055f0
+- id: F3-02
+  folder: F3_aisles_h30x20_a150_x3
+  parameters:
+    aisle_width_m: 1.5
+    cross_aisles: 3
+    hall_m: [30, 20]
+    rack_depth_m: 2.0
+    rows: 5
+  seed: 402000
+  candidate: 0
+  rejected: 0
+  status: confirmed
+  sdf_sha256: 8ba50a03e0bad977db145606f140c67dca0494bce6480f0c7030e79eede347db
+- id: F3-03
+  folder: F3_aisles_h30x20_a300_x1
+  parameters:
+    aisle_width_m: 3.0
+    cross_aisles: 1
+    hall_m: [30, 20]
+    rack_depth_m: 2.0
+    rows: 3
+  seed: 403000
+  candidate: 0
+  rejected: 0
+  status: confirmed
+  sdf_sha256: 9ae1e45174695d438694176c2a66b006b3d5ff9f854bc3ea92e3205750dd5286
+- id: F3-04
+  folder: F3_aisles_h30x20_a300_x3
+  parameters:
+    aisle_width_m: 3.0
+    cross_aisles: 3
+    hall_m: [30, 20]
+    rack_depth_m: 2.0
+    rows: 3
+  seed: 404000
+  candidate: 0
+  rejected: 0
+  status: confirmed
+  sdf_sha256: 42259d59a78aa2304dea29e3afa9b89722ba5ebf4c817d5cb3d9d0e7b65d14c4
+- id: F3-05
+  folder: F3_aisles_h60x40_a300_x1
+  parameters:
+    aisle_width_m: 3.0
+    cross_aisles: 1
+    hall_m: [60, 40]
+    rack_depth_m: 2.0
+    rows: 7
+  seed: 407000
+  candidate: 0
+  rejected: 0
+  status: confirmed
+  sdf_sha256: 6ddfc4ab1b2d0adbc66538542b320afc3f9df5c91fc049e8a7fc499f01513cbe

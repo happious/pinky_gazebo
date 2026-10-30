@@ -1,0 +1,118 @@
+family: F2
+worldgen_version: 1.0.1
+generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
+seed_sequences: {evaluation: '200000 + 1000·j + i (j: setting, i: candidate 0…999)', pilot: 250000 + 1000·j + i}
+rejected_total: 0
+instances:
+- id: F2-01
+  folder: F2_office_f30x20_r08_d1
+  parameters:
+    corridor_width_m: 2.0
+    cross_corridors: 1
+    door_width_m: 1.2
+    doors_per_room: 1
+    floor_m: [30, 20]
+    rooms: 8
+  seed: 201000
+  candidate: 0
+  rejected: 0
+  status: confirmed
+  sdf_sha256: 96df57896cad9edc52bb0804ca02544a07d3677b1536436384339389fa24149d
+- id: F2-02
+  folder: F2_office_f30x20_r08_d2
+  parameters:
+    corridor_width_m: 2.0
+    cross_corridors: 1
+    door_width_m: 1.2
+    doors_per_room: 2
+    floor_m: [30, 20]
+    rooms: 8
+  seed: 202000
+  candidate: 0
+  rejected: 0
+  status: confirmed
+  sdf_sha256: 501160c5e0a208fec35c96e52c3f0a7d216e7eb2576e52229c08c0650cb75e3a
+- id: F2-03
+  folder: F2_office_f30x20_r20_d1
+  parameters:
+    corridor_width_m: 2.0
+    cross_corridors: 1
+    door_width_m: 1.2
+    doors_per_room: 1
+    floor_m: [30, 20]
+    rooms: 20
+  seed: 203000
+  candidate: 0
+  rejected: 0
+  status: confirmed
+  sdf_sha256: 105472a53321c84d561996b4782854588c563eb2768ae9a53eb7e48162c7bca5
+- id: F2-04
+  folder: F2_office_f30x20_r20_d2
+  parameters:
+    corridor_width_m: 2.0
+    cross_corridors: 1
+    door_width_m: 1.2
+    doors_per_room: 2
+    floor_m: [30, 20]
+    rooms: 20
+  seed: 204000
+  candidate: 0
+  rejected: 0
+  status: confirmed
+  sdf_sha256: 8c0f59756a464419f5a46ab526a3dc00dc0fb59c95008fff2f0d846ad5c26ded
+- id: F2-05
+  folder: F2_office_f50x30_r08_d1
+  parameters:
+    corridor_width_m: 2.0
+    cross_corridors: 2
+    door_width_m: 1.2
+    doors_per_room: 1
+    floor_m: [50, 30]
+    rooms: 8
+  seed: 205000
+  candidate: 0
+  rejected: 0
+  status: confirmed
+  sdf_sha256: a9fcfc0b78b2ae60feb3f5f57afc168bf234098cdb0e832e7bbe786f461230da
+- id: F2-06
+  folder: F2_office_f50x30_r08_d2
+  parameters:
+    corridor_width_m: 2.0
+    cross_corridors: 2
+    door_width_m: 1.2
+    doors_per_room: 2
+    floor_m: [50, 30]
+    rooms: 8
+  seed: 206000
+  candidate: 0
+  rejected: 0
+  status: confirmed
+  sdf_sha256: fa70e945cc947854e90c45bc9fc764b28bda3ad621e7affe3ac0c12d2ecb951b
+- id: F2-07
+  folder: F2_office_f50x30_r20_d1
+  parameters:
+    corridor_width_m: 2.0
+    cross_corridors: 2
+    door_width_m: 1.2
+    doors_per_room: 1
+    floor_m: [50, 30]
+    rooms: 20
+  seed: 207000
+  candidate: 0
+  rejected: 0
+  status: confirmed
+  sdf_sha256: 13de31e5401deb111594f1f16265f160543bfabcb716ccfce0b0a5c361a1eb88
+- id: F2-08
+  folder: F2_office_f50x30_r20_d2
+  parameters:
+    corridor_width_m: 2.0
+    cross_corridors: 2
+    door_width_m: 1.2
+    doors_per_room: 2
+    floor_m: [50, 30]
+    rooms: 20
+  seed: 208000
+  candidate: 0
+  rejected: 0
+  status: confirmed
+  sdf_sha256: 3cfe01f8bae8252ee7f6781c9d4c12415efbe27301ebf40afcf9ba0c39d0c3be

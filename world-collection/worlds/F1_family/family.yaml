@@ -1,0 +1,70 @@
+family: F1
+worldgen_version: 1.0.1
+generator: {numpy: 2.2.6, scipy: 1.15.3, matplotlib: 3.10.3}
+seed_sequences: {evaluation: '100000·1 + 1000·j + i (j: setting, i: candidate 0…999)', pilot: 150000 + 1000·j + i}
+rejected_total: 0
+instances:
+- id: F1-01
+  folder: F1_maze_s08_perfect_rb
+  parameters: {algorithm: recursive backtracker, cell_pitch_m: 2.5, cells: 8, landmarks: 11, loops: perfect}
+  seed: 101000
+  candidate: 0
+  rejected: 0
+  status: confirmed
+  sdf_sha256: 3936fed4b30da7cc0f6acffa7fa311cb8078fb98f7f90854414fe739b64b472e
+- id: F1-02
+  folder: F1_maze_s08_perfect_kr
+  parameters: {algorithm: Kruskal, cell_pitch_m: 2.5, cells: 8, landmarks: 11, loops: perfect}
+  seed: 102000
+  candidate: 0
+  rejected: 0
+  status: confirmed
+  sdf_sha256: 95f0e1a7bae77bab9980c35c6c7fc7d21bbbc81d8ad7ec15c5378f8ba8cbaf11
+- id: F1-03
+  folder: F1_maze_s08_braid50_rb
+  parameters: {algorithm: recursive backtracker, cell_pitch_m: 2.5, cells: 8, landmarks: 11, loops: braid 0.5}
+  seed: 103000
+  candidate: 0
+  rejected: 0
+  status: confirmed
+  sdf_sha256: 0e19ca9cb94de96270982bcae5fde38809c06497c17ef63053e7a8bf9afa10e3
+- id: F1-04
+  folder: F1_maze_s08_braid50_kr
+  parameters: {algorithm: Kruskal, cell_pitch_m: 2.5, cells: 8, landmarks: 11, loops: braid 0.5}
+  seed: 104000
+  candidate: 0
+  rejected: 0
+  status: confirmed
+  sdf_sha256: f4635d9599cd4cd3ce31086b8b5e5a7f43084e5bddc08eb5242e17197cfb27f3
+- id: F1-05
+  folder: F1_maze_s14_perfect_rb
+  parameters: {algorithm: recursive backtracker, cell_pitch_m: 2.5, cells: 14, landmarks: 33, loops: perfect}
+  seed: 105000
+  candidate: 0
+  rejected: 0
+  status: confirmed
+  sdf_sha256: 5dc7d587180507715fe228fdde1e8116f3dacfcd4e7bfeca0c095b426e9f8f40
+- id: F1-06
+  folder: F1_maze_s14_perfect_kr
+  parameters: {algorithm: Kruskal, cell_pitch_m: 2.5, cells: 14, landmarks: 33, loops: perfect}
+  seed: 106000
+  candidate: 0
+  rejected: 0
+  status: confirmed
+  sdf_sha256: cbac176917f06b844ed15e9de10aabb39e659672f22f8d42b8fb93d2abab3247
+- id: F1-07
+  folder: F1_maze_s14_braid50_rb
+  parameters: {algorithm: recursive backtracker, cell_pitch_m: 2.5, cells: 14, landmarks: 33, loops: braid 0.5}
+  seed: 107000
+  candidate: 0
+  rejected: 0
+  status: confirmed
+  sdf_sha256: 92f28e144b4ea4168a93ce4e0f2f01730d217aa96ec840ed59155d41eeae14ee
+- id: F1-08
+  folder: F1_maze_s14_braid50_kr
+  parameters: {algorithm: Kruskal, cell_pitch_m: 2.5, cells: 14, landmarks: 33, loops: braid 0.5}
+  seed: 108000
+  candidate: 0
+  rejected: 0
+  status: confirmed
+  sdf_sha256: e0d92a0a3e8be01e9e52420cc5371494aa8c4069e7a17598f97ee61b703279f7
